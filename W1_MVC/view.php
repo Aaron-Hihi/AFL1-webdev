@@ -114,7 +114,7 @@ include("controller.php");
                                     <th><?= $key + 1 ?></th>
                                     <td><?= htmlspecialchars($matakuliah->nama) ?></td>
                                     <td class="text-center align-middle">
-                                        <button class="btn btn-warning btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#dataModal" data-type="matakuliah" data-action="edit" data-id="<?= $matakuliah->id ?>" data-mata_kuliah="<?= htmlspecialchars($matakuliah->nama) ?>">Edit</button>
+                                        <button class="btn btn-warning btn-sm edit-btn " data-bs-toggle="modal" data-bs-target="#dataModal" data-type="matakuliah" data-action="edit" data-id="<?= $matakuliah->id ?>" data-mata_kuliah="<?= htmlspecialchars($matakuliah->nama) ?>">Edit</button>
                                         <button class="btn btn-danger btn-sm delete-btn" data-type="matakuliah" data-id="<?= $matakuliah->id ?>" data-nama="<?= htmlspecialchars($matakuliah->nama) ?>">Delete</button>
                                     </td>
                                 </tr>
@@ -129,7 +129,7 @@ include("controller.php");
         <div id="enrollments" class="content-section d-none">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h2>Mahasiswa - Mata Kuliah</h2>
+                    <h2>Enrollments</h2>
                     <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#dataModal" data-type="enrollments" data-action="add">+ Tambah Baru</button>
                 </div>
                 <div class="card-body">
