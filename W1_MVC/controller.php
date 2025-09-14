@@ -144,7 +144,7 @@ $controller = new DatabaseController($conn);
 
 $action = $_POST['action'] ?? null;
 
-if ($action) {
+if (!empty($action)) {
     switch ($action) {
         // Mahasiswa
         case 'add_mahasiswa':
